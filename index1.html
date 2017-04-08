@@ -5,6 +5,8 @@
     <title></title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index1.css">
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="main">
@@ -16,29 +18,29 @@
             <div class="header-r fr">
                 <ul class="list clearfix">
                     <li class="fl">
-                        <a href="javasript:;">首页</a>
+                        <a href="index.html">首页</a>
                     </li>
                     <li class="fl">
-                        <a href="javasript:;">服务范围</a>
+                        <a href="index1.html">服务范围</a>
                     </li>
                     <li class="fl">
-                        <a href="javasript:;">服务说明</a>
+                        <a href="index2.html">服务说明</a>
                     </li>
                     <li class="fl">
-                        <a href="javasript:;">在线预约</a>
+                        <a href="index3.html">在线预约</a>
                     </li>
                     <li class="fl">
-                        <a href="javasript:;">会员服务</a>
+                        <a href="index4.html">会员服务</a>
                     </li>
                     <li class="fl">
-                        <a href="javasript:;">加入我们</a>
+                        <a href="index5.html">加入我们</a>
                     </li>
                 </ul>
             </div>
         </div>
         <!--banner-->
         <div class="banner">
-            <ul class="page">
+            <ul class="page" id="ul">
                 <li>
                     <a href="javascript:;">
                         <img src="img/bg1.jpg" alt="">
@@ -60,40 +62,283 @@
                     </a>
                 </li>
             </ul>
-            <ol class="page-btn">
+            <ol class="page-btn" id="ol">
                 <li class="active"></li>
                 <li></li>
                 <li></li>
                 <li></li>
             </ol>
         </div>
-
-        <!--&lt;!&ndash;foot&ndash;&gt;-->
-        <!--<div class="foot">-->
-            <!--<div class="foot-con">-->
-                <!--<ul>-->
-                    <!--<li class="fl">-->
-                        <!--<a href="javascript:;">首页</a>-->
-                    <!--</li>-->
-                    <!--<li class="fl">-->
-                        <!--<a href="javascript:;">服务范围</a>-->
-                    <!--</li>-->
-                    <!--<li class="fl">-->
-                        <!--<a href="javascript:;">服务说明</a>-->
-                    <!--</li>-->
-                    <!--<li class="fl">-->
-                        <!--<a href="javascript:;">在线预约</a>-->
-                    <!--</li>-->
-                    <!--<li class="fl">-->
-                        <!--<a href="javascript:;">会员服务</a>-->
-                    <!--</li>-->
-                    <!--<li class="fl">-->
-                        <!--<a class="last" href="javascript:;">加入我们</a>-->
-                    <!--</li>-->
-                <!--</ul>-->
-                <!--<p>Copyright © 2015  省心壹家 All Rights Reserved .</p>-->
-            <!--</div>-->
-        <!--</div>-->
+        <!--内容-->
+        <div class="center">
+            <div class="content">
+                <div class="content-t">
+                    <div class="content-t-t clearfix">
+                        <p class="fl">维修上门服务</p>
+                        <span class="fr">以下服务内容仅供参考，具体问题请联系客服详细咨询</span>
+                    </div>
+                    <div class="content-t-b clearfix">
+                        <div class="content-t-b-con fl">
+                            <div class="c-con-t">
+                                <img src="img/29.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>管道洁具维修</h4>
+                                <p><i></i>水龙头更换</p>
+                                <p><i></i>鱼缸漏水</p>
+                                <p><i></i>厨房下水管漏水</p>
+                                <p><i></i>更换马桶软管、套管、坐便盖等</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con fl">
+                            <div class="c-con-t">
+                                <img src="img/33.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>强电弱电维修</h4>
+                                <p><i></i>开关故障</p>
+                                <p><i></i>短路故障维修</p>
+                                <p><i></i>电话线/网络故障</p>
+                                <p><i></i>熄顶灯故障</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con fl">
+                            <div class="c-con-t">
+                                <img src="img/34.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>木工维修</h4>
+                                <p><i></i>抽屉轨道维修</p>
+                                <p><i></i>柜门合页故障</p>
+                                <p><i></i>推拉门故障维修</p>
+                                <p><i></i>更换提脚线</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con fl">
+                            <div class="c-con-t">
+                                <img src="img/35.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>粉刷瓦工维修</h4>
+                                <p><i></i>铺贴地面、墙面瓷砖</p>
+                                <p><i></i>人造石维修(裂缝)</p>
+                                <p><i></i>锈斑清晰</p>
+                                <p><i></i>水泥砂浆粉刷</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con mt17 fl">
+                            <div class="c-con-t">
+                                <img src="img/36.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>门窗维修</h4>
+                                <p><i></i>纱窗网更换</p>
+                                <p><i></i>纱窗更换</p>
+                                <p><i></i>纱门更换</p>
+                                <p><i></i>窗脱掺水</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con mt17 fl">
+                            <div class="c-con-t">
+                                <img src="img/37.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>墙面修补</h4>
+                                <p><i></i>铲除、批嵌、刷涂</p>
+                                <p><i></i>挫沙、防水处理</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con mt17 fl">
+                            <div class="c-con-t">
+                                <img src="img/38.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>卫生地面惨掺漏</h4>
+                                <p><i></i>凿除、找平、防水、铺贴</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con mt17 fl">
+                            <div class="c-con-t">
+                                <img src="img/39.png" alt="">
+                            </div>
+                            <div class="c-con-b">
+                                <h4>其他</h4>
+                                <p><i></i>其他上门维修</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-c">
+                    <div class="content-t-t content-c-t clearfix">
+                        <p class="fl">保洁上门服务</p>
+                        <span class="fr">以下服务内容仅供参考，具体问题请联系客服详细咨询</span>
+                    </div>
+                    <div class="content-t-b content-c-b clearfix">
+                        <div class="content-t-b-con content-c-con fl">
+                            <div class="c-con-t">
+                                <img src="img/40.png" alt="">
+                            </div>
+                            <div class="c-con-b h215">
+                                <h4>普通家庭清洁</h4>
+                                <p><i></i>普通家庭清洁</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con content-c-con fl">
+                            <div class="c-con-t">
+                                <img src="img/41.png" alt="">
+                            </div>
+                            <div class="c-con-b h215">
+                                <h4>深度清洁</h4>
+                                <p><i></i>深度清洁</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con content-c-con fl">
+                            <div class="c-con-t">
+                                <img src="img/42.png" alt="">
+                            </div>
+                            <div class="c-con-b h215">
+                                <h4>开荒保洁</h4>
+                                <p><i></i>开荒保洁</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="content-t-b-con content-c-con fl">
+                            <div class="c-con-t">
+                                <img src="img/43.png" alt="">
+                            </div>
+                            <div class="c-con-b h215">
+                                <h4>租房快速清洁</h4>
+                                <p><i></i>租房快速清洁</p>
+                                <a href="javascript:;">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-b">
+                    <div class="content-t-t content-c-t clearfix">
+                        <p class="fl">维修上门服务</p>
+                        <span class="fr">以下服务内容仅供参考，具体问题请联系客服详细咨询</span>
+                    </div>
+                    <div class="content-b-b">
+                        <p>联系电话</p>
+                        <div class="clearfix">
+                            <input class="fl" type="text" />
+                            <stong class="fl"></stong>
+                        </div>
+                        <p>住址</p>
+                        <div class="clearfix">
+                            <input class="fl" type="text" />
+                            <stong class="fl"></stong>
+                        </div>
+                        <p>问题阐述</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <a href="javascript:;">提交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--foot-->
+        <div class="foot">
+            <div class="foot-con">
+                <ul>
+                    <li class="fl">
+                        <a href="javascript:;">首页</a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;">服务范围</a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;">服务说明</a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;">在线预约</a>
+                    </li>
+                    <li class="fl">
+                        <a href="javascript:;">会员服务</a>
+                    </li>
+                    <li class="fl">
+                        <a class="last" href="javascript:;">加入我们</a>
+                    </li>
+                </ul>
+                <p>Copyright © 2015  省心壹家 All Rights Reserved .</p>
+            </div>
+        </div>
+        <!--左侧导航条-->
+        <div class="p-left" id="side">
+            <span>
+                分<br />享<br />网<br />站
+            </span>
+            <div class="p-left-t clearfix">
+                <em class="em1 fl">分享到网站</em>
+                <a id="close" class="close fr" href="javascript:;"></a>
+            </div>
+            <ul class="p-left-b">
+                <li>
+                    <a class="w0" href="javascript:;"><i></i><stong>复制网址</stong></a>
+                </li>
+                <li>
+                    <a class="w1" href="javascript:;"><i></i><stong>微信</stong></a>
+                </li>
+                <li>
+                    <a class="w2" href="javascript:;"><i></i><stong>新浪微博</stong></a>
+                </li>
+                <li>
+                    <a class="w3" href="javascript:;"><i></i><stong>QQ空间</stong></a>
+                </li>
+                <li>
+                    <a class="w4" href="javascript:;"><i></i><stong>腾讯微博</stong></a>
+                </li>
+                <li>
+                    <a class="w5" href="javascript:;"><i></i><stong>开心网</stong></a>
+                </li>
+                <li>
+                    <a class="w6" href="javascript:;"><i></i><stong>人人网</stong></a>
+                </li>
+                <li>
+                    <a class="w7" href="javascript:;"><i></i><stong>豆瓣网</stong></a>
+                </li>
+                <li>
+                    <a class="w8" href="javascript:;"><i></i><stong>网易微博</stong></a>
+                </li>
+                <li>
+                    <a class="w9" href="javascript:;"><i></i><stong>百度贴吧</stong></a>
+                </li>
+            </ul>
+        </div>
+        <!--右侧导航条-->
+        <div class="p-right" id="side1">
+            <span>
+                在<br />线<br />客<br />服
+            </span>
+            <div class="p-right-t">
+                <div class="p-right-t-t clearfix">
+                    <em class="em2 fl"></em>
+                    <a id="close1" class="close1 fr" href="javascript:;"></a>
+                </div>
+                <div class="p-right-t-b">
+                    <img src="img/26.png" alt="">
+                </div>
+            </div>
+            <div class="p-right-c">
+                <a class="p-right-c-con" href="javascript:;">在线客服</a>
+                <p>QQ : 2511749940</p>
+            </div>
+            <div class="p-right-b">
+                <a class="p-right-c-con con1" href="javascript:;">在线客服</a>
+                <p>QQ : 2511749940</p>
+            </div>
+        </div>
     </div>
 </body>
+<!--<script src="js/index.js"></script>-->
 </html>

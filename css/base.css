@@ -10,6 +10,6 @@ img{vertical-align:top; border:none;}
 .fr{float:right;}
 .clearfix:after{display:block; content:''; clear:both;}
 .clearfix{zoom:1;}
-input{border:0; padding:0; outline:none; background:none;}
-textarea{resize:none;}
+input{border:0; padding:0;  background:none;}
+/*textarea{resize:none;}*/
 table{border-collapse:collapse;}
